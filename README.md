@@ -10,4 +10,3 @@
 * Access to S3
 * Access to EC2
 * IAM Roles created for collaboration in cross-account access
-* Outputs for credentials
