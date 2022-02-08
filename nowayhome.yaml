@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources:
+  rDylanUser:
+    Type: AWS::IAM::User
+    Properties:
+      Policies: 
+        - PolicyName: AllowS3Upload
+          PolicyDocument:
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "s3:GetObject"
+                  - "s3:PutObject"
+                Resource:
+                  - !Sub "arn:${AWS::Partition}:s3:::athenas3cq2022/*"
+      UserName: Dylan@deviant.com
