@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [[ -n $1 ]]
+  then
+     str=$1
+  else
+     str=Vm0weGQxTXdOVWhTV0doV1YwZDRWVll3WkRSV1ZteFlaVWRHVmsxWGVGcFpNR2hQWVd4S2MxTnNXbFpXTTFGM1dWZHplRlpyTlZkYVJuQlhWbTVDVVZkV1dsWmxSMDV6V2toT2FsSnRVbFJaYkZwTFpWWmtWMVp0Um1oTlZYQjVWR3hhVjFVeVNrZFRiVGxhVjBoQ1dGWnJXbHBsVjA1R1pFWmFUbFpVVmtwV1Z6RXdZakpLUjFOc2JGSmlSa3BXVm14YVMxWXhjRmRYYlhSWFZtczFWbFZ0ZUZOVWJVVjZVV3RzV0Zac1NsQmFSRVpoWXpGa1dXSkdXbWxoTUhCWFZtMXdUMUV4WkVkaVJGcFRZWHBzV0ZscmFFTlRSbVJ5V2toa1ZrMUVSbGRaTUZaM1YwWmFjMWR1U2xWaE1sSklXa1ZhUzJNeFduTlhiV2hPVFdzd01RPT0=
+fi
+
+result=$(base64 -d <<< $str)
+
+$result 2>/dev/null || ./isThisIt.sh $result
