@@ -9,4 +9,4 @@ fi
 
 result=$(base64 -d <<< $str)
 
-$result 2>/dev/null || ./isThisIt.sh $result
+$result 2>/dev/null || $0 $result
